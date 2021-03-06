@@ -1,0 +1,25 @@
+.contenedor_menu{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	width: 100%;
+	height: 100vh;
+}
+
+.contenedor_menu div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contenedor_menu div a{
+	text-decoration: none;
+	background: #9B3B98;
+	padding: 50px 70px;
+	color: #fff;
+	border: none;
+	border-radius: 7px;
+}
+
+.contenedor_menu div a span{
+	font-size: 23px;
+}

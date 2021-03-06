@@ -1,0 +1,71 @@
+.ficha-docente{
+	display: grid;
+	grid-template-rows: 80px 1fr;
+	height: 100vh;
+}
+
+.cabecera-ficha-docente{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.btn-atras{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn-atras a{
+	text-decoration: none;
+	color: #fff;
+	padding: 13px 17px;
+	background-color: red;
+	border-radius: 7px;
+}
+
+.titulo-ficha{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.titulo-ficha h5{
+	font-size: 30px;
+}
+
+.ficha-docente form{
+	display: grid;
+	grid-template-rows: 80px 80px 80px 40px;
+}
+
+.ficha-docente form div{
+	display: grid;
+	grid-template-columns: .4fr .4fr;
+}
+
+#footer-ficha-docente{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-top: 50px;
+}
+
+#footer-ficha-docente a{
+	margin: 0px 10px;
+	border: none;
+	padding: 11px;
+	border-radius: 7px;
+	text-decoration: none;
+	color: #fff;
+	background-color: red;
+}
+
+#footer-ficha-docente button{
+	color: #EFF0F5;
+	background-color: #1DD902;
+	margin: 0px 10px;
+	border: none;
+	padding: 13px;
+	border-radius: 7px;
+	cursor: pointer;
+	font-size: 15px;
+}

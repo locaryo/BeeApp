@@ -1,0 +1,31 @@
+.aside{
+	width: 70%;
+	background-color: #C624C0;
+	height: auto;
+	display: grid;
+	grid-template-rows: 70px 70px 70px 70px;
+}
+
+.home, .estudiante,.docente,.menu{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.home a, .estudiante a, .docente a, .menu a{
+	text-decoration: none;
+	color: #fff;
+	border: none;
+	width: 100%;
+	text-align: center;
+	padding: 9px 0px;
+	transition: .6s ease;
+}
+
+.home a i{
+	font-size: 15px;
+}
+
+.home a:hover, .estudiante a:hover, .docente a:hover, .menu a:hover{
+	background-color: #4C058A;
+}

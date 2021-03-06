@@ -1,0 +1,49 @@
+.form_busqueda{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.form_busqueda form{
+	display: flex;
+	flex-direction: column;
+
+}
+
+.titulo_busqueda{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.titulo_busqueda label{
+	margin-bottom: 12px;
+	font-size: 29px;
+}
+
+.boton_busqueda input{
+	width: 50%;
+	text-align: center;
+}
+
+.boton_busqueda{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.boton_busqueda button{
+	margin-left: 10px;
+	padding: 5px 23px;
+	color: #fff;
+	background-color: #056BFF;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 19px;
+}

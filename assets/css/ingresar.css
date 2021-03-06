@@ -1,0 +1,105 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	font-family: 'mon';
+}
+
+body{
+	background: #EFF0F5;
+}
+
+/* cabecera */
+.header{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	width: 100%;
+	height: auto;
+	background-color: #100d35;
+}
+
+.boton-atras{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.boton-atras a{
+	text-decoration: none;
+	margin: 10px 80px;
+	padding: 7px 17px;
+	background-color: #E30202;
+	color: #EFF0F5;
+	border: none;
+	border-radius: 7px;
+	transition: .5s ease;
+	font-size: 19px;
+}
+
+.boton-atras a:hover{
+	padding-right: 19px;
+	padding-left: 19px;
+}
+
+.logo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo h1{
+	color: #fff;
+	font-size: 50px;
+}
+
+/* formulario */
+
+.cuerpo-form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 500px;
+}
+
+.cuerpo-form form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: auto;
+}
+
+.cuerpo-form form label{
+	margin: 13px 0px;
+}
+
+.cuerpo-form form input{
+	font-size: 17px;
+	text-align: center;
+	width: 21%;
+}
+
+.cuerpo-form form button{
+	margin: 15px;
+	border: none;
+	background-color: #1DD902;
+	color: #EFF0F5;
+	padding: 15px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: .7s ease;
+}
+
+.cuerpo-form form button:hover{
+	padding-left: 23px;
+	padding-right: 23px;
+}
+
+@font-face{
+	font-family: 'mon';
+	src: url('../font/Montserrat-Regular.ttf');
+}

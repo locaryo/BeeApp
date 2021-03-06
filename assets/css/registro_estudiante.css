@@ -1,0 +1,64 @@
+.contenedor-registro-e{
+	display: grid;
+	grid-template-rows: 70px 1fr;
+	height: 100vh;
+}
+
+.formulario-registro{
+	display: grid;
+	grid-template-rows: 100px 100px 100px 100px 100px;  
+}
+
+.hasan{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+}
+
+.abdul{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+}
+
+input{
+	text-transform: uppercase;
+}
+
+.boton{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.boton button{
+	background: #1DD902;
+	color: #fff;
+	padding: 13px;
+	border-radius: 7px;
+	border: none;
+	margin-right: 50px;
+	cursor: pointer;
+}
+
+.boton a{
+	background: #E30202;
+	text-decoration: none;
+	color: #fff;
+	padding: 10px;
+	border-radius: 7px;
+	margin-left: 50px;
+	border: none;
+}
+
+.titulo{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.titulo h3{
+	font-size: 30px;
+}

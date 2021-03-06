@@ -1,0 +1,145 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	font-family: 'mon';
+}
+
+/* Cabecera */
+
+.header{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	width: 100%;
+	height: auto;
+	background-color: #100d35;
+}
+
+.logo{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.logo h1{
+	margin-left: 100px;
+	color: #fff;
+}
+
+.boton-inicio{
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.boton-inicio a{
+	text-decoration: none;
+	color: #fff;
+	border: none;
+	background-color: #E30202;
+	padding: 9px 17px;
+	border-radius: 7px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	transition: .5s ease;
+	font-size: 19px;
+}
+
+.boton-inicio a:hover{
+	padding-right: 19px;
+	padding-left: 19px;
+}
+
+.cuerpo_inicio{
+	height: 100vh;
+	background: #EFF0F5;
+}
+
+/* primera seccion */
+
+.presentacion{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 100%;
+	height: 350px;
+	
+}
+
+.presentacion-logo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.presentacion-logo h1{
+	font-size: 50px;
+}
+
+.presentacion-parrafo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.presentacion-parrafo p{
+	margin: 10px 70px;
+	text-align: center;
+}
+
+/* segunda seccion */
+
+.caracteristicas{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	width: 100%;
+	height: 200px;
+}
+
+.caracteristicas div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #c624c0;
+	color: #f0f0f0;
+}
+
+.caracteristicas div p{
+	text-align: center;
+	margin: 3px 10px;
+}
+
+/* pie de pagina */
+
+.pie-inicio{
+	display: grid;
+	width: 100%;
+	height: 70px;
+	grid-template-columns: 1fr 1fr;
+	background: #100D35;
+	color: #fff
+}
+
+.autores{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.redes{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-items: center;
+}
+
+.redes p{
+	margin: 0px 13px;
+}
+
+@font-face{
+	font-family: 'mon';
+	src: url('../font/Montserrat-Regular.ttf');
+}

@@ -1,0 +1,67 @@
+.cuerpo-registro-docente{
+	display: grid;
+	grid-template-rows: 80px 1fr;
+	height: 100vh;
+}
+
+.contenedor-form {
+	display: flex;
+	justify-content: center;
+	/* align-items: center; */
+	width: 100%;
+	height: auto;
+}
+
+.contenedor-form form {
+	display: grid;
+	grid-template-rows: 80px 80px 80px 100px;
+}
+
+.cuerpo-registro-docente div {
+	display: flex;
+	justify-content: center;
+	/* align-items: center; */
+}
+
+.cuerpo-registro-docente div h3 {
+	margin-top: 20px;
+	font-size: 30px;
+}
+
+
+input{
+	margin: 0px 10px 20px 0px;
+	text-transform: uppercase;
+
+}
+
+label{
+	margin-right: 27px;
+}
+
+
+.footer_registro_docente{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.footer_registro_docente button{
+	padding: 13px;
+	background: #1DD902;
+	border: none;
+	color: #EFF0F5;
+	margin-right: 50px;
+	cursor: pointer;
+	border-radius: 7px
+}
+
+.footer_registro_docente a{
+	padding: 11px;
+	background: #E30202;
+	text-decoration: none;
+	color: #EFF0F5;
+	margin-left: 50px;
+	border-radius: 7px
+}

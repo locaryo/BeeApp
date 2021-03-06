@@ -1,0 +1,76 @@
+#cabecera-ficha{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 100%;
+	margin: 10px 0px 30px 0px;
+}
+
+#cabecera-ficha div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#cabecera-ficha h5{
+	font-size: 30px;
+}
+
+#cabecera-ficha a{
+	text-decoration: none;
+	color: #fff;
+	padding: 13px 17px;
+	background-color: red;
+	border-radius: 7px;
+}
+
+.ficha-estudiante{
+	display: grid;
+	grid-template-rows:70px 1fr;
+	width: 100%;
+	height: 100vh;
+}
+
+#form-ficha-estudiante{
+	display: grid;
+	grid-template-rows: 80px 80px 80px 80px 80px;
+}
+
+#form-ficha-estudiante div{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+#footer-ficha-estudiante{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-top: 40px;
+}
+
+#footer-ficha-estudiante a{
+	margin: 0px 10px;
+	border: none;
+	padding: 11px;
+	border-radius: 7px;
+	text-decoration: none;
+}
+
+#eliminar-ficha-estudiante{
+	color: #fff;
+	background-color: red;
+}
+
+#editar-ficha-estudiante{
+	color: #EFF0F5;
+	background-color: #1DD902;
+	margin: 0px 10px;
+	border: none;
+	padding: 13px;
+	border-radius: 7px;
+	cursor: pointer;
+	font-size: 15px;
+
+}
+
+#footer-ficha-estudiante label{
+	margin: 0px 10px;
+}
