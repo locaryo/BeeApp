@@ -2,11 +2,11 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 /**
- * 
+ *
  */
 class Admin extends CI_Controller
 {
-	
+
 	function __construct()
 	{
 		parent::__construct();
@@ -29,7 +29,7 @@ class Admin extends CI_Controller
 	}
 
 	public function index()
-	{	
+	{
 		if ($this->session->userdata('rango') == 1 AND $this->session->userdata('is_logged') == TRUE) {
 			$alumnos = $this->Consultas->ConsultaAlumnos();
 			$docentes = $this->Consultas->ConsultaDocentes();
@@ -58,8 +58,8 @@ class Admin extends CI_Controller
 		}else{
 			redirect('welcome/vistaIngresar?'.'noautorizado','refresh');
 		}
-	
-	} 
+
+	}
 
 	######## Modulo De estudiantes ########
 
@@ -91,7 +91,7 @@ class Admin extends CI_Controller
 					$menciones = $this->Consultas->ConsultaMencion();
 					$view = $this->load->view('admin/ficha/ficha_estudiante', array('result' => $result, 'turnos' => $turnos, 'cursos' => $cursos, 'secciones' => $secciones, 'codigos' => $codigos, 'nacimiento' => $nacimiento, 'fotos_e' => $fotos_e, 'fotos_r' => $fotos_r, 'cartas_v' => $cartas_v, 'certificados' => $certificados, 'notas' => $notas, 'menciones' => $menciones), TRUE);
 							$this->Template($view);
-						
+
 				}else{
 					redirect('welcome/vistaIngresar?'.'noautorizado','refresh');
 				}
@@ -258,10 +258,10 @@ class Admin extends CI_Controller
 			if ($contrasena != FALSE) {
 				$this->Consultas->Login($usuario, $contrasena);
 			}else{
-				echo "pass requerido";
+				///
 			}
 		}else{
-			echo "usuario requerido";
+			///
 		}
 	}
 
@@ -326,7 +326,7 @@ class Admin extends CI_Controller
 
 	public function Constancia()
 	{
-	
+
 		if ($this->session->userdata('rango') == 1 AND $this->session->userdata('is_logged') == TRUE) {
 			$ci = $this->input->post('cedula');
 
@@ -342,7 +342,7 @@ class Admin extends CI_Controller
 
 	public function ConstanciaInscripcion()
 	{
-	
+
 		if ($this->session->userdata('rango') == 1 AND $this->session->userdata('is_logged') == TRUE) {
 			$ci = $this->input->post('cedula');
 
@@ -358,7 +358,7 @@ class Admin extends CI_Controller
 
 	public function ConstanciaRetiro()
 	{
-	
+
 		if ($this->session->userdata('rango') == 1 AND $this->session->userdata('is_logged') == TRUE) {
 			$ci = $this->input->post('cedula');
 

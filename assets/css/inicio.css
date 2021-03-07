@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	font-family: 'mon';
+	overflow-x: hidden;
 }
 
 /* Cabecera */
@@ -63,7 +64,7 @@
 	grid-template-columns: 1fr 1fr;
 	width: 100%;
 	height: 350px;
-	
+
 }
 
 .presentacion-logo{
@@ -137,6 +138,93 @@
 
 .redes p{
 	margin: 0px 13px;
+}
+
+.modal{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	transition: all .5s ease;
+}
+
+#modal:target{
+	background-color: rgba(0,0,0,.8);
+	visibility: visible;
+	opacity: 1;
+}
+
+.contenido-modal{
+	display: grid;
+	grid-template-rows: 80px 30px 1fr;
+	background-color: #EFF0F5;
+	width: 400px;
+	height: 500px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.header-modal{
+	width: 100%;
+	color: #000;
+	text-align: center;
+	font-size: 30px;
+}
+
+.header-modal h3{
+	margin-top: 20px;
+}
+
+.form-modal form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.form-modal form button{
+	margin-top: 30px;
+	border: none;
+	background-color: #1DD902;
+	color: #EFF0F5;
+	padding: 15px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: .7s ease;
+}
+
+.form-modal form button:hover{
+	padding-left: 23px;
+	padding-right: 23px;
+}
+
+form label{
+	margin: 13px 0px;
+}
+
+form input{
+	font-size: 17px;
+	text-align: center;
+	width: 50%;
+}
+
+.btn-modal-close{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn-modal-close a{
+	text-decoration: none;
+	margin-top: 30px;
+	background-color: #E30202;
+	color: #EFF0F5;
+	padding: 10px 17px;
+	border-radius: 7px;
 }
 
 @font-face{

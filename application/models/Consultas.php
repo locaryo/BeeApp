@@ -1,11 +1,11 @@
- <?php 
+ <?php
 
 /**
- * 
+ *
  */
 class Consultas extends CI_Model
 {
-	
+
 	function __construct()
 	{
 		parent:: __construct();
@@ -30,7 +30,7 @@ class Consultas extends CI_Model
 	#}
 
 	public function Login($user, $pass)
-	{	
+	{
 		$dato = date('Y-m-d');
 		if ($pass != FALSE) {
 			$query_pass = $this->db->get('REGISTRO');
@@ -41,7 +41,7 @@ class Consultas extends CI_Model
 					if ($result_datos = $query_user->row()) {
 						if ($dato == $result_datos->tiempo || $dato > $result_datos->tiempo) {
 							redirect('welcome/vistaIngresar?'.'tiempovencido','refresh');
-							
+
 						}else{
 							$array = array(
 						        'rango' => $result_datos->rango,
@@ -49,15 +49,19 @@ class Consultas extends CI_Model
 							);
 							$this->session->set_userdata( $array );
 							redirect('admin','refresh');
-						}					
-					}
+						}
+					}else{
+            redirect('welcome'.'?verifiqueuser','refresh');
+          }
 				}
-			}
+			}else {
+        redirect('welcome'.'?verifiquepass','refresh');
+      }
 		}
 	}
 
 	/////////////////// Inicio Consulta para Generar Estadisticas ///////////////////
-	
+
 	//////Consulta Estadisticas Total "Alumnos"
 
 	public function ConsultaAlumnos()

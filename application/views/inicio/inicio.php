@@ -14,9 +14,51 @@
 				<h1>BeeApp</h1>
 			</div>
 			<div class='boton-inicio'>
-				<a href="<?= base_url('index.php/welcome/vistaIngresar') ?>"><i class="fas fa-door-open"></i></a>
+				<a href="<?=base_url('index.php/Welcome/vistaIngresar')?>"><i class="fas fa-door-open"></i></a>
 			</div>
 		</header>
+
+		<!-- Modal -->
+
+			<!-- <div class="modal" id="modal">
+				<div class="contenido-modal">
+					<div class="header-modal">
+						<h3>INGRESAR</h3>
+					</div>
+					<div >
+						<?php if (isset($_GET['verifiquepass'])): ?>
+						<p style="color: red; text-align: center;">Contraseña Incorrecta</p>
+						<?php endif ?>
+
+						<?php if (isset($_GET['verifiqueuser'])): ?>
+						<p style="color: red; text-align: center;">Usuario Incorrecto</p>
+						<?php endif ?>
+
+						<?php if (isset($_GET['noautorizado'])): ?>
+						<p style="color: red; text-align: center;">Inicie Sesion para acceder al Dashboard</p>
+						<?php endif ?>
+
+						<?php if (isset($_GET['tiempovencido'])): ?>
+						<p style="color: red; text-align: center;">Aplicacion Bloqueada: Comunicarse a Servicio Tecnico</p>
+						<?php endif ?>
+					</div>
+					<div class="cuerpo-modal">
+						<div class="form-modal">
+							<form class="" action="<?php echo base_url('index.php/Admin/Ingresar') ?>" method="post">
+								<label for="">Usuario</label>
+								<input type="text" name="usuario">
+								<label for="">Contraseña</label>
+								<input type="password" name="contrasena">
+								<button type="submit">INGRESAR</button>
+								</label>
+							</form>
+						</div>
+						<div class="btn-modal-close">
+							<a href="#">Cerrar</a>
+						</div>
+					</div>
+				</div>
+			</div> -->
 
 		<div class="cuerpo_inicio">
 				<!-- primera seccion -->
@@ -60,6 +102,7 @@
 				<p><i class="fas fa-mobile-alt"></i> +58 123-45-45</p>
 			</div>
 		</footer>
+
 		</body>
 		<script type="text/javascript" src="<?= base_url('assets/js/all.min.js'); ?>"></script>
 	</html>
