@@ -4,7 +4,7 @@ BeeApp v1
 
 BeeApp es una Aplicacion web dirigida a instituciones educativas para mejorar el rendimiento
 en el area administrativa, esta version cuenta con las funciones por defecto registro de estudiantes, docentes entre otros.
-Consulta personalizada de estudiantes, docentes. Generar constancias pre-diseñadas de estudio, retiro, inscripcion. ssss
+Consulta personalizada de estudiantes, docentes. Generar constancias pre-diseñadas de estudio, retiro, inscripcion.
 
 *******************
 Server Requirements
