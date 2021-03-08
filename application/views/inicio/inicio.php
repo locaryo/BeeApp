@@ -14,13 +14,14 @@
 				<h1>BeeApp</h1>
 			</div>
 			<div class='boton-inicio'>
-				<a href="<?=base_url('index.php/Welcome/vistaIngresar')?>"><i class="fas fa-door-open"></i></a>
+				<!-- <a href="<?=base_url('index.php/Welcome/vistaIngresar')?>"><i class="fas fa-door-open"></i></a> -->
+				<a href="#modal"><i class="fas fa-door-open"></i></a>
 			</div>
 		</header>
 
 		<!-- Modal -->
 
-			<!-- <div class="modal" id="modal">
+			<div class="modal" id="modal">
 				<div class="contenido-modal">
 					<div class="header-modal">
 						<h3>INGRESAR</h3>
@@ -44,12 +45,12 @@
 					</div>
 					<div class="cuerpo-modal">
 						<div class="form-modal">
-							<form class="" action="<?php echo base_url('index.php/Admin/Ingresar') ?>" method="post">
-								<label for="">Usuario</label>
-								<input type="text" name="usuario">
-								<label for="">Contraseña</label>
-								<input type="password" name="contrasena">
-								<button type="submit">INGRESAR</button>
+							<form action="<?php echo base_url('index.php/Admin/Ingresar') ?>" method="post" id="form_login" onsubmit="return ValidarInputLogin();">
+								<label for="usuario">Usuario</label>
+								<input type="text" name="usuario" id="input-usuario">
+								<label for="contrasena">Contraseña</label>
+								<input type="password" name="contrasena" id="input-pass">
+								<button type="submit" id="btn-login">INGRESAR</button>
 								</label>
 							</form>
 						</div>
@@ -58,7 +59,9 @@
 						</div>
 					</div>
 				</div>
-			</div> -->
+			</div>
+
+			<!-- FIN Modal -->
 
 		<div class="cuerpo_inicio">
 				<!-- primera seccion -->
@@ -84,7 +87,7 @@
 				<p>Se mueve con una rapidez al momento de hacer transiciones por la app, en la carga, edicion y eliminacion de datos.  </p>
 			</div>
 			<div>
-				<h3>ADAPTABLE</h3>
+				<h3>FLEXIBLE</h3>
 				<p>BeeApp cuenta con una version predeterminada, pero eso no representa problema, ya que puede evolucionar y adaptarse a los diferentes requerimientos que presente la institucion.</p>
 			</div>
 		</section>

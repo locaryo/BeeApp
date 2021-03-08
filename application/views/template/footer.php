@@ -9,6 +9,7 @@
 	</div>
 </footer>
 </body>
+<script type="text/javascript" src="<?= base_url('assets/js/validate_form_login.js') ?>"></script>
 <script type="text/javascript" src="<?= base_url('assets/js/all.min.js') ?>"></script>
 <script type="text/javascript" src="<?= base_url('assets/js/ficha_estudiante.js') ?>"></script>
 <script type="text/javascript" src="<?= base_url('assets/js/validate_form_register_e.js') ?>"></script>
